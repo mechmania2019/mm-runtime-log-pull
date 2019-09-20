@@ -16,10 +16,10 @@ mongoose.Promise = global.Promise;
 
 module.exports = authenticate(async (req, res) => {
   const team = req.user;
-  
+
   console.log(`${team.name} - Getting the runtime logs from kubectl`);
 
-  const script = (req.url === "/") ? await Script.findbyId(team.latestScript).exec() : req.url.slice(1);
+  const script = (req.url === "/") ? await Script.findById(team.latestScript).exec() : req.url.slice(1);
 
   const kubectlProc = await execa(KUBECTL_PATH, 
     [

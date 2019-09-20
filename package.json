@@ -1,5 +1,5 @@
 {
-  "name": "mm-runtime-log-pull",
+  "name": "runtime-log-pull",
   "scripts": {
     "start": "micro .",
     "deploy": "./deploy.sh"
