@@ -19,7 +19,7 @@ module.exports = authenticate(async (req, res) => {
 
   console.log(`${team.name} - Getting the runtime logs from kubectl`);
 
-  const script = (req.url === "/") ? await Script.findById(team.latestScript).exec() : req.url.slice(1);
+  const script = (req.url === "/") ? await Script.findById(team.latestScript).exec() : await Script.findOne({key : req.url.slice(1)}).exec();
 
   const kubectlProc = await execa(KUBECTL_PATH, 
     [

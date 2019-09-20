@@ -17,6 +17,8 @@ spec:
       containers:
       - name: runtime-log-pull
         image: gcr.io/mechmania2017/runtime-log-pull:latest
+        ports:
+        - containerPort: 3000
         env:
           - name: MONGO_URL
             valueFrom:
