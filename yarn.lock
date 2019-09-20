@@ -167,6 +167,13 @@ mkdirp@^0.5.0:
   dependencies:
     minimist "0.0.8"
 
+mm-authenticate@0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/mm-authenticate/-/mm-authenticate-0.0.10.tgz#e2f73b507c162ea21844d93e8c6fcbca7d52ce25"
+  integrity sha512-idmaApHMjBOFEMw8XYM05dkDfoqURpFSdwwOLfBoq0Qlmgq4q4D/wcCM/6h4CV9XrUCcpSwMWUUH0an66qfE2A==
+  dependencies:
+    mm-schemas "0.0.10"
+
 mm-schemas@0.0.10:
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/mm-schemas/-/mm-schemas-0.0.10.tgz#69836ad7cf229449e1404a83db6b86a1ff181921"
