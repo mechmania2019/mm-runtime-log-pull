@@ -1,5 +1,5 @@
 {
-  "name": "mm-compiled-log-pull",
+  "name": "mm-runtime-log-pull",
   "scripts": {
     "start": "node index.js",
     "deploy": "./deploy.sh"

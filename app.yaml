@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: compiler
+  name: mm-runtime-log-pull
   labels:
-    app: compiler
+    app: mm-runtime-log-pull
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
-      app: compiler
+      app: mm-runtime-log-pull
   template:
     metadata:
       labels:
-        app: compiler
+        app: mm-runtime-log-pull
     spec:
       containers:
-      - name: compiler
-        image: gcr.io/mechmania2017/compiler:latest
+      - name: mm-runtime-log-pull
+        image: gcr.io/mechmania2017/mm-runtime-log-pull:latest
         env:
           - name: MONGO_URL
             valueFrom:
