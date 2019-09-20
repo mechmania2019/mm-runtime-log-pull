@@ -47,3 +47,17 @@ spec:
       - name: gcr
         secret:
           secretName: gcr
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mm-runtime-log-pull-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: mm-runtime-log-pull
+  ports:
+  - port: 80
+    name: mm-runtime-log-pull-service
+    targetPort: 3000
+    protocol: TCP
