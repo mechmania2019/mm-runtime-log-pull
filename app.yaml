@@ -23,11 +23,6 @@ spec:
               secretKeyRef:
                 name: creds
                 key: mongo
-          - name: RABBITMQ_URI
-            valueFrom:
-              secretKeyRef:
-                name: creds
-                key: rabbitmq
           - name: AWS_ACCESS_KEY_ID
             valueFrom:
               secretKeyRef:
