@@ -24,7 +24,7 @@ module.exports = authenticate(async (req, res) => {
   const kubectlProc = await execa(KUBECTL_PATH, 
     [
       "logs",
-      `pods/bot-${script.key}`,
+      `pods/deployment-${script.key}`,
       "--tail=1000"
     ]);
 
