@@ -19,4 +19,4 @@ COPY --from=kubectl /usr/local/bin/kubectl /usr/src/kubectl
 RUN apk add --update --no-cache docker curl ca-certificates
 ENV NODE_ENV="production"
 COPY --from=base /usr/src .
-CMD ["node", "index.js"]
+CMD ["node", "./node_modules/.bin/micro"]
