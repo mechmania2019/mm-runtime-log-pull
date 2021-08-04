@@ -10,7 +10,7 @@
     "mm-authenticate": "0.0.10",
     "mm-schemas": "0.0.10",
     "mongoose": "5.7.1",
-    "tar": "4.4.6",
+    "tar": "4.4.15",
     "through2": "2.0.3"
   }
 }
